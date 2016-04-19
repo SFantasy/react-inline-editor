@@ -1,0 +1,13 @@
+{
+  "name": "react-inline-editor",
+  "version": "0.0.1",
+  "description": "An medium-like inline rich editor built with react.",
+  "keywords": [
+    "editor",
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "author": "Fantasy Shao <fantasyshao@icloud.com>",
+  "dependencies": {}
+}
