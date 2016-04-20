@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 
 export default class Editor extends Component {
 
@@ -6,9 +6,41 @@ export default class Editor extends Component {
     super(props)
   }
 
+  static propTypes = {
+    html: PropTypes.string
+  }
+
+  static defaultProps = {
+    html: ''
+  }
+
+  componentDidMount () {
+
+  }
+
+  shouldComponentUpdate (nextProps, nextStates) {
+
+  }
+
+  componentWillReceiveProps (nextProps) {
+
+  }
+
+  componentDidUpdate () {
+
+  }
+
+  componentWillUnmount () {
+
+  }
+
   render () {
-    return (
-      <div>Editor</div>
-    )
+    return React.createElement(
+      'div',
+      Object.assign({}, this.props, {
+        dangerouslySetInnerHTML: {__html: this.props.html},
+        contentEditable: true
+      }),
+      this.props.children)
   }
 }
