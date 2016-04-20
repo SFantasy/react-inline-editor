@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <main>
         <h1>react-inline-editor</h1>
-        <Editor />
+        <Editor html="this is text" />
       </main>
     )
   }
